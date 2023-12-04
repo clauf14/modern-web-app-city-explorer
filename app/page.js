@@ -5,8 +5,9 @@ import Link from "next/link"
 export default function Home() {
   return (
     <>
-      <h1>Home</h1>
-      <header>
+      <h1>City Explorer App</h1>
+      <h2>Home Page</h2>
+      <header> Menu
         <ul>
           <li><Link href="/city">City Page</Link></li>
           <li><Link href="/favourites">Favourites Page</Link></li>
