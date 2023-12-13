@@ -1,8 +1,9 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import '@fontsource/raleway/400.css'
+import '@fontsource/open-sans/700.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import theme from './../theme'
+
 
 export const metadata = {
   title: 'City Explorer',
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
           <ColorModeProvider>
             {children}
           </ColorModeProvider>
