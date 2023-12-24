@@ -5,10 +5,6 @@ export default function Header(){
         <>
             <Heading size='xl' mb={50}>
                 City Explorer App
-            </Heading> 
-
-            <Heading size='l' mb={50}>
-                Home Page
             </Heading>
         </>  
     )

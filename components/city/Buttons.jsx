@@ -9,6 +9,7 @@ export default function Buttons( {cityData} ){
     const addToFavourite = async (e) => {
         e.preventDefault()
         try {
+            setIcon(<MdFavorite />)
             const res = await fetch("http://localhost:3000/city", {
                 method: "POST",
                 headers:{
@@ -23,8 +24,7 @@ export default function Buttons( {cityData} ){
             })
 
             if(res.ok){
-                setIcon(<MdFavorite />)
-                alert("City added to favorites!")
+                alert("City added to favorites! Click on the button from the bottom of the page to see your favourite city/cities!")
             }
         } catch (error) {
             console.log(error)

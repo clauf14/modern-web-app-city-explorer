@@ -49,7 +49,7 @@ export default function Search(){
     };
 
     return (
-        <Flex height="70vh" align="center" justify="center">
+        <Flex height="50vh" align="center" justify="center">
             <Box textAlign="center">
                 <Heading m={5}>Welcome to the search page!</Heading>
                 <Box>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Loading from "../../../components/city/Loading";
 import Buttons from "../../../components/city/Buttons";
 import InfoBox from "../../../components/city/InfoBox";
-import { Heading } from "@chakra-ui/react";
+import { Button, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function CityDetails( {params} ){
@@ -69,7 +69,9 @@ export default function CityDetails( {params} ){
         <div>
             <Buttons cityData={cityData} />
             <InfoBox cityData={cityData} weatherData={weatherData} id={id}/>
-            <Link m={5} href="/favourites">Go to favourites page!</Link>
+            <Button m={5} colorScheme='teal'variant='solid'>
+                <Link href="/favourites">Go to favourites page!</Link>
+            </Button>
         </div>
     )
     

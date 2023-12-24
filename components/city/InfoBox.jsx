@@ -1,6 +1,24 @@
 import { Box, Heading } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 export default function InfoBox( {cityData, weatherData, id} ){
+    
+    const [sunrise, setSunrise] = useState("")
+    const [sunset, setSunset] = useState("")
+
+    useEffect(() => {
+        if (weatherData.sys) {
+          const sunriseDate = new Date(weatherData.sys.sunrise * 1000); // Convert Unix timestamp to milliseconds
+          const sunsetDate = new Date(weatherData.sys.sunset * 1000);
+    
+          const sunriseTime = sunriseDate.toLocaleTimeString([], {hour12: false, hour: '2-digit', minute: '2-digit'});
+          const sunsetTime = sunsetDate.toLocaleTimeString([], {hour12: false, hour: '2-digit', minute: '2-digit'});
+    
+          setSunrise(sunriseTime);
+          setSunset(sunsetTime);
+        }
+      }, [weatherData]);
+    
     return (
         <div>
 
@@ -38,10 +56,10 @@ export default function InfoBox( {cityData, weatherData, id} ){
                 <strong>Wind:</strong> {weatherData.wind.speed + " km/h"}
             </Box>
             <Box>
-                <strong>Sunrise:</strong> {weatherData.sys.sunrise}
+                <strong>Sunrise:</strong> {sunrise}
             </Box>
             <Box>
-                <strong>Sunset:</strong> {weatherData.sys.sunset}
+                <strong>Sunset:</strong> {sunset}
             </Box>
         </Box>
 
