@@ -32,7 +32,7 @@ The favorite page contains every city that the user added to favorites. If the s
    npm run dev
   ```
 
-**4. Click on the link and enjoy!**
+**3. Click on the link and enjoy!**
 
   - Server started on [http://localhost:3000](http://localhost:3000)
 
