@@ -20,7 +20,7 @@ The favorite page contains every city that the user added to favorites. If the s
 ![alt text](https://github.com/clauf14/modern-web-app-city-explorer/blob/main/poze/fav_page.PNG)
 
 ## Usage
-**Make sure you have Node.js installed!** <br>
+### Make sure you have Node.js installed!
 **1. Clone the Repository and open with VSCode:**
 
    ```git bash
