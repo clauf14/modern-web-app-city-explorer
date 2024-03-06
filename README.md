@@ -25,8 +25,13 @@ The favorite page contains every city that the user added to favorites. If the s
    ```git bash
    git clone https://github.com/clauf14/modern-web-app-city-explorer.git
    ```
-
 **2. Open the terminal and type:**
+
+  ```git bash
+   npm install next@latest
+  ```
+
+**3. Type in terminal:**
 
   ```git bash
    npm run dev
