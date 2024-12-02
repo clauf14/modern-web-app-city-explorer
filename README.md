@@ -31,6 +31,7 @@ The favorite page contains every city that the user added to favorites. If the s
   ```git bash
    npm i react
    npm install next@latest
+   npm install openmeteo
    npm i mongoose
    npm i @chakra-ui/react
    npm i react-icons
