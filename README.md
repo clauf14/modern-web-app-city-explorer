@@ -35,6 +35,7 @@ The favorite page contains every city that the user added to favorites. If the s
    npm i mongoose
    npm i @chakra-ui/react
    npm i react-icons
+   npm i --save unsplash-js
   ```
 
 **3. Do the following prerequisites:**
