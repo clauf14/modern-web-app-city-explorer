@@ -29,7 +29,11 @@ The favorite page contains every city that the user added to favorites. If the s
 **2. Open the terminal and type:**
 
   ```git bash
+   npm i react
    npm install next@latest
+   npm i mongoose
+   npm i @chakra-ui/react
+   npm i react-icons
   ```
 
 **3. Type in terminal:**
