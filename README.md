@@ -37,7 +37,9 @@ The favorite page contains every city that the user added to favorites. If the s
   ```
 
 **3. Do the following prerequisites:**
+```git bash
    Change in .env file with your Openweather API key and with mongoDB database cluster connection string
+```
 
 **4. Type in terminal:**
 
