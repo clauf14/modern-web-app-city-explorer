@@ -36,7 +36,10 @@ The favorite page contains every city that the user added to favorites. If the s
    npm i react-icons
   ```
 
-**3. Type in terminal:**
+**3. Do the following prerequisites:**
+   Change in .env file with your Openweather API key and with mongoDB database cluster connection string
+
+**4. Type in terminal:**
 
   ```git bash
    npm run dev
