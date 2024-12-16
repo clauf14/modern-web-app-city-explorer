@@ -3,7 +3,7 @@
 ## Overview
 This fullstack app features a homepage where are generated 5 random locations for visiting this year, a search page where the user can search a city, and the informations about city are provided from Geocoding API and OpenWeather API by fetching informations.
 The city page contains more details about the selected city, such as humiduty, temperature, sunrise, sunset and many others. Also you can the city to favorites, and by doing this the information of that city is stored in a MongoDB database.
-The favorite page contains every city that the user added to favorites. If the server is restarded and the city is still in the database, the user can't add the city again, only if he deletes it.
+The favorite page contains every city that the user added to favorites. If the server is restarded and the city is still in the database, the user can't add the city again, only if he deletes it. Another feature of the app is that it is fetching photots from Pixabay API based on the name and the country of the city and those photos are added on a carousel on the city page.
 
 ## Preview
 **Homepage**
